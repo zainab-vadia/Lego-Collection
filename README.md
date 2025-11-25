@@ -8,23 +8,35 @@ This project provides a full CRUD interface, a clean UI, LEGO set data integrati
 ## 📁 Project Structure
 
 ```
-Lego-Collection/
+LegoSets/
 │
-├── data/                   # JSON datasets (LEGO themes, sets, details)
-├── modules/                # Helper modules for data operations
-├── public/                 # CSS, JS, images (static assets)
-├── views/                  # EJS templates (pages + layouts)
-│   ├── layout.ejs
-│   ├── home.ejs
+├── data/                     # LEGO Themes & Sets JSON
+│
+├── modules/
+│   ├── legoSets.js           # Handles set/theme data operations
+│   └── auth-service.js       # Handles users, login, register, MongoDB
+│
+├── public/                   # CSS, images, static assets
+│
+├── views/                    # EJS templates
+│   ├── login.ejs
+│   ├── register.ejs
+│   ├── userHistory.ejs
 │   ├── sets.ejs
-│   ├── set-details.ejs
-│   └── errors.ejs
+│   ├── set.ejs
+│   ├── addSet.ejs
+│   ├── editSet.ejs
+│   ├── about.ejs
+│   ├── home.ejs
+│   ├── 404.ejs
+│   ├── 500.ejs
+│   └── partials/             # Headers, navbars, etc.
 │
-├── server.js               # Main Express server
-├── package.json
+├── .env                      # Environment variables
+├── server.js                 # Main Express app
 ├── tailwind.config.js
-├── vercel.json             # Deployment config
-└── .gitignore
+├── package.json
+└── vercel.json               # Optional deployment config
 ```
 
 ---
@@ -64,29 +76,26 @@ Includes `vercel.json` for instant deployment on Vercel.
 
 ## 🛠 Installation & Setup
 
-### 1️⃣ Install dependencies
-
+### 1. Install Dependencies
 ```
 npm install
 ```
 
-### 2️⃣ Run the server
+### 2. Create a `.env` file
+```
+PORT=8080
+MONGODB=<your MongoDB cluster URI>
+```
 
+### 3. Start the Server
 ```
 npm start
 ```
 
-Or with nodemon:
+Visit:
 
 ```
-npm run dev
-```
-
-### 3️⃣ Visit the app  
-Open:
-
-```
-http://localhost:3000
+http://localhost:8080
 ```
 
 ---
