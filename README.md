@@ -1,80 +1,46 @@
-# 🧱 Lego Collection — Full-Stack Web App  
+# Lego Collection — Full-Stack Web App  
 A complete Node.js + Express + EJS + TailwindCSS application for managing a personal LEGO set collection.
 
 This project provides a full CRUD interface, a clean UI, LEGO set data integration, and a structured modular codebase ready for deployment (including Vercel configuration).
 
----
 
-## 📁 Project Structure
-
-```
-LegoSets/
-│
-├── data/                     # LEGO Themes & Sets JSON
-│
-├── modules/
-│   ├── legoSets.js           # Handles set/theme data operations
-│   └── auth-service.js       # Handles users, login, register, MongoDB
-│
-├── public/                   # CSS, images, static assets
-│
-├── views/                    # EJS templates
-│   ├── login.ejs
-│   ├── register.ejs
-│   ├── userHistory.ejs
-│   ├── sets.ejs
-│   ├── set.ejs
-│   ├── addSet.ejs
-│   ├── editSet.ejs
-│   ├── about.ejs
-│   ├── home.ejs
-│   ├── 404.ejs
-│   ├── 500.ejs
-│   └── partials/             # Headers, navbars, etc.
-│
-├── .env                      # Environment variables
-├── server.js                 # Main Express app
-├── tailwind.config.js
-├── package.json
-└── vercel.json               # Optional deployment config
-```
 
 ---
 
-## 🚀 Features
+## Features
 
-### 🔍 Browse LEGO Sets  
+### Browse LEGO Sets  
 - View all available LEGO sets  
 - Filter by theme  
 - See piece count, year, and images  
 
-### 📦 Set Details  
+### Set Details  
 - Full page for each set  
 - Item number, name, description  
 - High-quality thumbnails  
 
-### ➕ Add / Edit / Remove  
+### Add / Edit / Remove  
 - Add new sets to your collection  
 - Edit existing set details  
 - Delete sets from the database (JSON data layer)
 
-### 🎨 Clean UI  
+### Clean UI  
 - Styled using **TailwindCSS**  
 - Templates powered by **EJS**  
 - Fully responsive design  
 
-### ⚙️ Backend  
+### Backend  
 - Node.js + Express  
 - Modular code structure  
 - JSON-based database (no external DB)  
 - Helper modules for parsing, searching, filtering  
 
-### ☁️ Deployment  
+### Deployment  
 Includes `vercel.json` for instant deployment on Vercel.
 
 ---
 
-## 🛠 Installation & Setup
+## Installation & Setup
 
 ### 1. Install Dependencies
 ```
@@ -100,7 +66,7 @@ http://localhost:8080
 
 ---
 
-## 🧪 Data Model Overview
+## Data Model Overview
 
 ### **Sets (`data/sets.json`)**
 ```json
@@ -125,7 +91,7 @@ http://localhost:8080
 
 ---
 
-## 📡 API-Like Helper Methods  
+## API-Like Helper Methods  
 Located inside `/modules`:
 
 - `getAllThemes()`  
@@ -140,7 +106,7 @@ These make the project easy to extend into a true REST API later.
 
 ---
 
-## 🖼 UI / Pages
+## UI / Pages
 
 - `/` – Home  
 - `/sets` – Browse all LEGO sets  
@@ -152,7 +118,7 @@ These make the project easy to extend into a true REST API later.
 
 ---
 
-## 🧰 Tech Stack
+## Tech Stack
 
 | Layer | Technology |
 |-------|------------|
@@ -163,7 +129,7 @@ These make the project easy to extend into a true REST API later.
 
 ---
 
-## 📄 Scripts
+## Scripts
 
 From `package.json`:
 
@@ -180,6 +146,4 @@ This project is for educational use and personal portfolio development.
 
 ---
 
-## 👥 Author  
-zmvadia
 
